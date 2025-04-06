@@ -1,8 +1,8 @@
 .header {
-    height: 293px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items:center;
+    height: 293px;
     padding: 92px 50px 96px 50px;
 }
 
@@ -28,146 +28,134 @@
 }
 
 .address_tel {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .header__logo-image {
-    background-size: cover;
     width: 148px;
     height: 105px;
+    background-size: cover;
 }
 
 .header__address {
-    font-family: Raleway;
+    justify-self: end;
     max-width: 240px;
-    justify-self: end; 
+    font-family: Raleway; 
 }
 
 .address {
     font-size: 18px;
-    text-underline-offset: 3px;
-    line-height: 1.4;
     font-style: normal;
+    line-height: 1.4;
+    text-underline-offset: 3px;
 }
 
 
 .cover {
     position: relative;
-    background-image: url("/images/cover.jpg");
-    background-size: cover;
     height: 100%;
+    background-image: url("/images/cover.jpg");
     background-position: center;
+    background-size: cover;
     z-index: -2;
 }
 
 .overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
-    left: 0;
-    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__description {
     display: flex;
 }
 
-
-.cover__title {
-    text-transform: uppercase;
-    font-family: Raleway;
-    font-weight: bold;
-    font-display: swap;
-    font-size: 100px;
+.cover__title { 
     padding-top: 165px;
-    padding-left: 50px;
     padding-right: 21px;
+    padding-left: 50px;
+    color: rgba(255, 255, 255, 1);   
+    font-size: 100px;   
     letter-spacing: 30px;
     text-underline-offset: 50px;
-    color: rgba(255, 255, 255, 1);
-    z-index: 1;
+    text-transform: uppercase;
+   
 }
 
 .aligned-text {
-  display: block;
+    display: block;
 }
 
 .aligned-text_center {
     display: block;
-    text-align: center;
     margin-top: 17px;
-
+    text-align: center;
 }
 
 .aligned-text_right {
-  display: block;
-  text-align: right;
-  margin-top: 17px;
+    display: block;
+    margin-top: 17px;
+    text-align: right;
 }
-
-.cover__description {
-    display: flex;
-    
-}
-
 
 .cover__description-text {
-    word-spacing: 18px;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
     padding: 118px 50px 60px 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 18px;
 }
 
 .bet-button {
-    margin-top: 104px;
-    margin-left: 60px;
-    font-size: 22px;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-    background-color: transparent;
     width: 256px;
     height: 51px;
+    margin-top: 104px;
+    margin-left: 60px;
     border-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
 }
 
 .lots {
-  margin-top: 183px;
+    margin-top: 183px;
 }
 
 .lots__heading {
+    margin-left: 63px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
-    margin-left: 63px;
 }
 
 .lots__card-list {
-    margin-top: 25px;
-    list-style-type: none;
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;  
     justify-content: flex-start;
-    flex-wrap: wrap;
     gap: 25px;
-    color: rgba(255, 255, 255, 1);
+    margin-top: 25px;
     padding-left: 24px;
-    
+    color: rgba(255, 255, 255, 1);
+    list-style-type: none;  
 }  
 
 .lots__card-list-item {
-    min-height: 596px;
     width: 334px;
+    min-height: 596px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;  
+    height: 100%;
     padding: 48px 40px;
-    line-height: 120%;  
-    height: 100%; 
+    line-height: 120%; 
 }
 
 .card-link {
@@ -175,44 +163,44 @@
 }
 
 .card_type_film {
-    position: relative;
-    background-image: url("/images/card-lot-01.jpg");
-    background-size: cover;
+    position: relative;  
     height: 100%;
+    background-image: url("/images/card-lot-01.jpg");
     background-position: center;
-    z-index: -2;    
+    background-size: cover;  
+    z-index: -2;
 }
 
 .card_type_book {
     position: relative;
-    background-image: url("/images/card-lot-02.jpg");
-    background-size: cover;
     height: 100%;
+    background-image: url("/images/card-lot-02.jpg");
     background-position: center;
+    background-size: cover;
     z-index: -2;  
 }
 
 .card_type_picture {
     position: relative;
-    background-image: url("/images/card-lot-03.jpg");
-    background-size: cover;
     height: 100%;
+    background-image: url("/images/card-lot-03.jpg");
     background-position: center;
-    z-index: -2;   
+    background-size: cover;  
+    z-index: -2; 
 }
 
 .card__title {
     font-weight: 700;
     font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: underline;
     line-height: 120%;
-    text-underline-offset: 3px;   
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-transform: uppercase;   
 }
 
 .card__text {
-    font-size: 20px;
     font-weight: 400;
+    font-size: 20px;
     line-height: 120%;
 }
 
@@ -222,52 +210,52 @@
 
 .lots__look-more-link {
     font-size: 20px;
-    text-transform: lowercase;
     text-decoration: underline;
     text-underline-offset: 4px;
+    text-transform: lowercase;
 }
 
 .about {
     display: grid;
-  grid-template-columns: 334px 1fr;
-  margin: 128px 24px 0px 24px;
-}
+    grid-template-columns: 334px 1fr;
+    margin: 128px 24px 0px 24px;
+}  
 
 .about-logo {
     margin-top: 27px;
 }
 
 .background-logo {
-    background-color: black;
-    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: 48px;
+    border-radius: 120px;
+    background-color: rgba(0, 0, 0, 1);
+    ;
 }
 
 .about__logo-image {
-  width: 148px;
-  height: 114px;
+    width: 148px;
+    height: 114px;
 }
-
 .about__column {
     margin-top: 128px;
     margin-left: 26px;
 }
 
 .about__title {
-  font-weight: 700;
-  font-size: 40px;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .about__text {
-  font-size: 20px;
-  margin-top: 100px;
-  margin-right: 4px;
+    margin-top: 100px;
+    margin-right: 4px;
+    font-size: 20px;
 }
 
 .about__text_p {
@@ -275,30 +263,24 @@
 }
 
 .footer {
-    margin-top: 181px;
-    height: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 180px;
+    margin-top: 181px;
 }
 
 .footer__address {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 
 .footer__menu {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .footer__menu-list {
-    
-    list-style-type: none;
     text-align: center;
-
-}
-
-.footer__menu-list-item {
-
+    list-style-type: none;
 }
 
 .footer__menu-link_active {
@@ -308,26 +290,17 @@
 .footer__menu-link {
     text-decoration: underline;
     text-underline-offset: 4px;
-
 }
 
 .footer__social-list {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 50px 0px 76px;
-}
-
-.footer__social-list-item {
-
-}
-
-.footer__social-link {
-
+    list-style-type: none;
 }
 
 .footer__social-icon {
-  width: 48px;
-  height: 48px;
+    width: 48px;
+    height: 48px;
 }
